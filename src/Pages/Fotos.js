@@ -2,7 +2,7 @@ import React from 'react'
 
 function Fotos() {
     return (
-        <div>Foto's</div>
+        <div style={{background:"#fff", height:"1000px"}}>Foto's</div>
     )
 }
 

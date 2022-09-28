@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div>Over Ons</div>
+        <div style={{background:"#fff", height:"1000px"}}>Over Ons</div>
     )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function GevelRenovatie() {
     return (
-        <div>GevelRenovatie</div>
+        <div style={{background:"#fff", height:"1000px"}}>GevelRenovatie</div>
     )
 }
 

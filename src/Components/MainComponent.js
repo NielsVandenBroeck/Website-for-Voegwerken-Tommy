@@ -1,5 +1,8 @@
-import React from 'react'
-import NavBar from './NavBar'
+import React, {useState} from 'react'
+
+import Navbar from './Navbar'
+import Sidebar from './Sidebar'
+import Footer from './Footer'
 
 import Home from '../Pages/Home'
 import GevelRenovatie from '../Pages/GevelRenovatie'
@@ -14,10 +17,17 @@ import {Routes, Route, Redirect} from 'react-router-dom'
 
 
 function Main(){
+
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
+
     return(
         <React.Fragment>
-            <NavBar/>
-
+            <Sidebar isOpen={isOpen} toggle={toggle}/>
+            <Navbar toggle={toggle}/>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/home' element={<Home/>}/>
@@ -28,7 +38,7 @@ function Main(){
                 <Route path='/contact' element={<Contact/>}/>
                 <Route path="*" element={<Error/>}/>
             </Routes>
-
+            <Footer/>
         </React.Fragment>
 
     )

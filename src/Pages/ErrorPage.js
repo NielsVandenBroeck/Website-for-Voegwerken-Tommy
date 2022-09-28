@@ -2,7 +2,7 @@ import React from 'react'
 
 function ErrorPage() {
     return (
-        <div>Error! Page not found.</div>
+        <div style={{background:"#fff", height:"1000px"}}>Error! Page not found.</div>
     )
 }
 

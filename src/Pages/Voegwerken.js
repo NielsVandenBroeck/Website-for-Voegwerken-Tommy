@@ -2,7 +2,7 @@ import React from 'react'
 
 function Voegwerken() {
     return (
-        <div>Voegwerken</div>
+        <div style={{background:"#fff", height:"1000px"}}>Voegwerken</div>
     )
 }
 
