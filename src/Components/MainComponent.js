@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
-import Navbar from './Navbar'
-import Sidebar from './Sidebar'
+import Navbar from './NavBar'
+import Sidebar from './SideBar'
 import Footer from './Footer'
 
 import Home from '../Pages/Home'

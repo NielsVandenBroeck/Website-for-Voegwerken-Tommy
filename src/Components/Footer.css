@@ -1,74 +1,78 @@
-import styled from 'styled-components'
-import {Link} from 'react-router-dom' 
-
-
-export const Foot = styled.div`
+.Foot{
     background: #2e0747;
     font-size: 1rem;
     z-index: 10;
     padding: 20;
     display: flex;
     justify-content: center;
+}
 
-    @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+    .Foot{
         display: block;
         justify-content: space-between;
     }
-`
+}
 
-export const FooterColumn = styled.div`
+.FooterColumn{
     padding: 50px;
+}
 
-    @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+    .FooterColumn{
         padding: 20px;
     }
-`
+}
 
-export const FooterElement = styled.div`
+.FooterElement{
     display: flex;
 
-    @media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 1000px) {
+    .FooterElement{
         justify-content: center;
     }
-`
+}
 
-export const Icon = styled.div`
+.ContactIcon{
     padding-top: 2px;
     padding-right: 5px;
-    color: #000;
-`
+}
 
-export const Text = styled.div`
+.Text{
     color: #fff;
     padding-bottom: 5px;
-`
+}
 
-export const HeaderText = styled.div`
+.HeaderText{
     color: #fff;
     padding-bottom: 10px;
     font-size: 30px;
     text-align: center;
-`
+}
 
-export const FooterLink = styled(Link)`
+.FooterLink{
     display: flex;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
     padding-bottom: 5px;
+}
 
-    @media screen and (max-width: 1000px) {
+@media only  screen and (max-width: 1000px) {
+    .FooterLink{
         justify-content: center;
     }
-`
+}
 
-export const Socials = styled.div`
+.Socials{
     display: flex;
     justify-content: center;    
-`
+}
 
-export const SocialIcon = styled.div`
+.SocialIcon{
     padding: 5px;
     height: 40px;
     width: 40px;
-`
+}
