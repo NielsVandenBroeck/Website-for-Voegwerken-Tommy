@@ -1,0 +1,12 @@
+.Home{
+    text-align: center;
+}
+
+.Image1{
+    background: url(../Images/test.jpg);
+    min-height: 100%;
+}
+
+.Title{
+    text-align: center;
+}

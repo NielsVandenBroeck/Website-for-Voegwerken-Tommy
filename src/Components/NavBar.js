@@ -19,7 +19,7 @@ const Navbar = ({toggle}) => {
                         <Link class="NavLinks" to="gevelrenovatie" spy={true} exact='true'>Gevelrenovatie</Link>
                         <Link class="NavLinks" to="voegwerken">Voegwerken</Link>
                         <Link class="NavLinks" to="about">Over ons</Link>
-                        <Link class="NavLinks" to="fotos">Foto's</Link>
+                        <Link class="NavLinks" to="projecten">Projecten</Link>
                         <div class="ContactUsContainer">
                             <Link class="ContactUsLink" to="contact">Contacteer ons</Link>
                         </div>

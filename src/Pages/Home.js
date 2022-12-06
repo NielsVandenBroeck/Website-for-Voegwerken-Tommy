@@ -2,8 +2,15 @@ import React from 'react'
 
 function Home() {
     return (
-        <div style={{background:"#fff", height:"1000px"}}>
-            Home
+        <div class="Home">
+            <div class="Image1">
+                <div class="Title">
+                    Tests
+                </div>
+            </div>
+            <div class="Text">
+
+            </div>
         </div>
     )
 }

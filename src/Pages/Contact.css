@@ -12,13 +12,6 @@
 
 .ContactInfo{
     padding: 20px;
-    max-width: 50%;
-}
-
-@media screen and (max-width: 800px){
-    .ContactInfo{
-        max-width: 100%;
-    }
 }
 
 .InputContainer{
@@ -26,19 +19,21 @@
     border: 3px solid #2e0747;
     border-radius: 10px;
     padding: 20px;
-    width: fill;
+    padding-top: 10px;
+    width: stretch;
 }
 
-.Names{
+.Split{
     display: flex;
 }
 
 @media screen and (max-width: 1100px){
-    .Names{
+    .Split{
         display: inline;
         width: 250px;
     }
 }
+
 
 .custom-field {
     width: 100%;
@@ -54,7 +49,7 @@
     padding-right: 10px;
 }
 
-.custom-field input,textarea {
+.custom-field input,textarea,select {
     width: 100%;
     border: none;
     -webkit-appearance: none;
@@ -71,6 +66,7 @@
 }
 
 .custom-field .placeholder {
+    cursor: text;
     position: absolute;
     left: var(--field-padding);
     width: calc(100% - (var(--field-padding) * 2));
@@ -87,7 +83,15 @@
         font-size 0.3s ease;
 }
 
-.custom-field input + .placeholder, textarea + .placeholder {
+.DropDownIcon{
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    pointer-events:none;
+}
+
+
+.custom-field input + .placeholder, textarea + .placeholder, select + .placeholder {
     left: 8px;
     padding: 0 5px;
 }
@@ -97,7 +101,8 @@
 .custom-field input:focus,
 .custom-field textarea.dirty,
 .custom-field textarea:not(:placeholder-shown),
-.custom-field textarea:focus {
+.custom-field textarea:focus,
+.custom-field select:not(:placeholder-shown){
     border-color: #2e0747;
     transition-delay: 0.1s
 }
@@ -105,6 +110,7 @@
 .custom-field input.dirty + .placeholder,
 .custom-field input:not(:placeholder-shown) + .placeholder,
 .custom-field input:focus + .placeholder,
+.custom-field select:not(:placeholder-shown) + .placeholder,
 .custom-field textarea.dirty + .placeholder,
 .custom-field textarea:not(:placeholder-shown) + .placeholder,
 .custom-field textarea:focus + .placeholder {
@@ -115,9 +121,90 @@
     width: auto
 }
 
-.maps{
-    width: 800px;
+.LocationContainer{
+    display: flex;
+    justify-content: left;
+    padding: 50px;
+    padding-top: 0px;
+}
+
+@media screen and (max-width: 800px){
+    .LocationContainer{
+        padding: 0px;
+        display: inline;
+    }
+}
+
+.MapsContainer{
+    width: 80%;
+}
+
+
+@media screen and (max-width: 800px){
+    .MapsContainer{
+        width: 100%;
+    }
+}
+
+.Maps{
+    margin:20px;
+    width:stretch;
     height: 600px;
     border: 3px solid #2e0747;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 800px){
+    .Maps{
+        margin: 0px;
+        border: none;
+        border-top: 3px solid #2e0747;
+        border-bottom: 3px solid #2e0747;
+        border-radius: 0px;
+    }
+}
+
+.LocationInfo{
+    padding: 20px;
+    width: 300px;
+}
+
+.OfferteContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.UploadFilesContainer{
+    display: flex;
+    appearance: none;
+    font-size: 20px;
+    background: none;
+    color: #aaa;
+}
+
+.Upload{
+    width: 100%;
+}
+
+input[type="file"] {
+    width: 100%;
+}
+
+
+.Button{
+    margin-top: 10px;
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #fff;
+    background: #2e0747;
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    padding: 10px;
+}
+

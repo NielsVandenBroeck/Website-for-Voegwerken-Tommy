@@ -1,0 +1,117 @@
+.Projects{
+    text-align: center;
+    display: grid;
+}
+
+.UpperTitle{
+    font-size: 60px;
+    padding: 40px;
+    color: #2e0747;
+}
+
+.RowContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ProjectContainer{
+    width: 33.33%;
+    padding: 60px;
+}
+
+@media screen and (max-width: 1000px){
+    .RowContainer{
+        display: grid;        
+    }
+
+    .ProjectContainer{
+        width: fit-content;
+    }
+}
+
+.ImageContainer{
+    user-select: none;
+    position: relative;
+}
+
+.Images{
+    display: flex;
+    position: relative;
+}
+
+.Images:hover .Image{
+    opacity: 0.5;
+}
+
+.Images:hover .middle {
+    opacity: 1;
+  }
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.Maximise{
+    cursor: pointer;
+    font-size: 30px;
+    color: #2e0747;
+}
+
+.NextImage{
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    color: #2e0747;
+    right: -46px;
+    top: 40%;
+}
+
+.PreviousImage{
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    color: #2e0747;
+    left: -40px;
+    top: 40%;
+}
+
+.Image{
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+.TitleDiv{
+    justify-content: space-between;
+    display: flex;
+}
+
+.ImageCount{
+    font-size: 13px;
+    right: 0;
+}
+
+.ProjectInfo{
+    text-align: start;
+    padding: 5px;
+    display: grid;
+}
+
+.Title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.Info{
+
+}
