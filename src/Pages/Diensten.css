@@ -1,0 +1,99 @@
+.Diensten{
+    padding: 50px;
+}
+
+.Title{
+    font-size: 30px;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+}
+
+.WhatWeDoContainer{
+    width: 60vw;
+    margin-top: 20px;
+    background-color: gray;
+    border-radius: 10px;
+    height: 75vh;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navitem{
+    all: unset;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    width: 33%;
+    background-color: darkgrey;
+    padding: 20px;
+    font-size: 2vw;
+    border: none;
+    cursor: pointer;
+}
+
+.navitem.left{
+    border-top-left-radius: 10px;
+}
+
+.navitem.right{
+    border-top-right-radius: 10px;
+}
+
+.navitem.active{
+    background-color: gray;
+}
+
+.InfoContainer{
+    color: white;
+}
+
+.InfoItem{
+    padding: 30px;
+    font-size: 1.5vw;
+    display: none;
+}
+
+.InfoItem.active{
+    display: block;
+}
+
+.WhatWeDoImage{
+    margin: 20px;
+    width: 40vw;
+    height: 75vh;
+    border-radius: 10px;
+    background: url(../Images/Diensten.jpg);
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 1000px){
+    .grid{
+        display: block;
+    }
+
+    .WhatWeDoContainer{
+        width: 100%;
+    }
+
+    .WhatWeDoImage{
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .InfoItem{
+        font-size: 3vw;
+    }
+
+    .navitem{
+        padding: 10px;
+        font-size: 3vw;
+    }
+
+}

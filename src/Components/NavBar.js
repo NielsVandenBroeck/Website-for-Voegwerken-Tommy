@@ -10,14 +10,13 @@ const Navbar = ({toggle}) => {
                 <div class="NavbarContainer">
                     <Link class="LogoContainer" to='/home'>
                         <div class="NavLogoImage"><Logo/></div>
-                        <div class="NavLogoText">Voegwerken Tommy</div>
+                        <h1 class="NavLogoText">Voegwerken Tommy</h1>
                     </Link>
                     <div class="MobileIcon" onClick={toggle}>
                         <FaBars style={{color:"#2e0747"}}/>
                     </div>
                     <div class="NavMenu">
-                        <Link class="NavLinks" to="gevelrenovatie" spy={true} exact='true'>Gevelrenovatie</Link>
-                        <Link class="NavLinks" to="voegwerken">Voegwerken</Link>
+                        <Link class="NavLinks" to="diensten">Diensten</Link>
                         <Link class="NavLinks" to="about">Over ons</Link>
                         <Link class="NavLinks" to="projecten">Projecten</Link>
                         <div class="ContactUsContainer">

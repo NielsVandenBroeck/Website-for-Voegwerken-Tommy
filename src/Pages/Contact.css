@@ -11,6 +11,7 @@
 }
 
 .ContactInfo{
+    font-size:  x-large;
     padding: 20px;
 }
 
@@ -128,22 +129,8 @@
     padding-top: 0px;
 }
 
-@media screen and (max-width: 800px){
-    .LocationContainer{
-        padding: 0px;
-        display: inline;
-    }
-}
-
 .MapsContainer{
     width: 80%;
-}
-
-
-@media screen and (max-width: 800px){
-    .MapsContainer{
-        width: 100%;
-    }
 }
 
 .Maps{
@@ -154,7 +141,15 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
+    .LocationContainer{
+        padding: 0px;
+        display: inline;
+    }
+
+    .MapsContainer{
+        width: 100%;
+    }
     .Maps{
         margin: 0px;
         border: none;
@@ -165,6 +160,7 @@
 }
 
 .LocationInfo{
+    font-size: x-large;
     padding: 20px;
     width: 300px;
 }
@@ -208,3 +204,8 @@ input[type="file"] {
     padding: 10px;
 }
 
+.ContactMethod{
+    font-weight: 500; 
+    text-decoration: none;
+    color: black;
+}

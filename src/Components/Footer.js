@@ -15,26 +15,25 @@ const Footer = () => {
                     <div class="HeaderText">Contact</div>
                     <div class="FooterElement">
                         <FiPhoneCall class="ContactIcon" style={{color:"#fff"}}/>
-                        <div class="Text">+32 478 20 67 28</div>
+                        <a class="Text" href="tel:+32 478 20 67 28" >+32 478 20 67 28</a>
                     </div>
                     <div class="FooterElement">
                         <FiMail class="ContactIcon" style={{color:"#fff"}}/>
-                        <div class="Text">voegwerkentommy@gmail.com</div>
+                        <a class="Text" href="mailto:voegwerkentommy@gmail.com">voegwerkentommy@gmail.com</a>
                     </div>
                     <div class="FooterElement">
                         <HiOutlineLocationMarker class="ContactIcon" style={{color:"#fff"}}/>
-                        <div class="Text">Lierbaan 163A Putte</div>
+                        <a class="Text" href="https://maps.app.goo.gl/4EgUgevBb6iZz15t5" target="_blank">Lierbaan 163A Putte</a>
                     </div>
                     <div class="FooterElement">
                         <FaRegAddressCard class="ContactIcon" style={{color:"#fff"}}/>
-                        <div class="Text">BTW BE...</div>
+                        <div class="Text">BTW BE 0784.521.746</div>
                     </div>
                 </div>
                 <div class="FooterColumn">
                     <div class="HeaderText">Menu</div>
                     <Link class="FooterLink" to="home">Home</Link>
-                    <Link class="FooterLink" to="gevelrenovatie">Gevelrenovatie</Link>
-                    <Link class="FooterLink" to="voegwerken">Voegwerken</Link>
+                    <Link class="FooterLink" to="Diensten">Diensten</Link>
                     <Link class="FooterLink" to="projecten">Projecten</Link>
                     <Link class="FooterLink" to="contact">Contacteer ons</Link>
                 </div>
@@ -42,7 +41,6 @@ const Footer = () => {
                     <div class="HeaderText">Volg ons</div>
                     <div class="Socials">
                             <a class="SocialIcon" href="https://www.instagram.com/tommyvandenbroeck/" target="_blank"><InstagramLogo/></a>
-                            <a class="SocialIcon" href="" target="_blank"><TwitterLogo/></a>
                             <a class="SocialIcon" href="https://www.facebook.com/Gorkytje" target="_blank"><FacebookLogo/></a>
                     </div>
                 </div>

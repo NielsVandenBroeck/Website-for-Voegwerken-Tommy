@@ -1,7 +1,7 @@
 .Nav{
     background: #fff;
     display: flex;
-    height: 80px;
+    height: 10vh;
     justify-content: left;
     align-items: center;
     font-size: 1rem;
@@ -19,11 +19,11 @@
 .NavbarContainer{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 10vh;
     width: 100%;
     padding-right: 100px;
     padding-left: 24px;
-    border-bottom: 3px solid #2e0747;
+    border-bottom: 2px solid #2e0747;
 }
 
 @media screen and (max-width: 1000px) {

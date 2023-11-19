@@ -8,8 +8,7 @@ const Sidebar = ({isOpen, toggle}) => {
         isOpen && (<div class="SidebarContainer" onClick={toggle}>
             <FaTimes class="Icon" onClick={toggle} style={{color:"#fff"}}/>
             <div class="SidebarMenu">
-                    <Link class="SidebarLink" to="gevelrenovatie" onClick={toggle}>Gevelrenovatie</Link>
-                    <Link class="SidebarLink" to="voegwerken" onClick={toggle}>Voegwerken</Link>
+                    <Link class="SidebarLink" to="diensten" onClick={toggle}>Diensten</Link>
                     <Link class="SidebarLink" to="about" onClick={toggle}>Over ons</Link>
                     <Link class="SidebarLink" to="projecten" onClick={toggle}>Projecten</Link>
                     <Link class="SidebarLink" to="contact" onClick={toggle}>Contacteer ons</Link>
