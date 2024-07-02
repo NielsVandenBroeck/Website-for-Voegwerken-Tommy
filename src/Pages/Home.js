@@ -23,7 +23,7 @@ function Home() {
                     <IoIosFlag class="icon"/>
                     <div class="WhyUsSubTitle">Kwaliteit</div>
                     <div class="WhyUsDescription">
-                        Precisie bij voegwerk is erg belangrijk omdat het de stevigheid, duurzaamheid en uitstraling van het metselwerk beïnvloed.
+                        Precisie bij voegwerk is erg belangrijk omdat het de stevigheid, duurzaamheid en uitstraling van het metselwerk beïnvloedt.
                         Daarom zorgen wij ervoor dat ons voegwerk van hoge kwaliteit is. Hiervoor maken we gebruik van hoogwaardige materialen en moderne technieken.
                     </div>
                 </div>

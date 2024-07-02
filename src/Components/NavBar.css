@@ -96,10 +96,15 @@
 }
 
 .ContactUsContainer{
-    background: #2e0747;
+    background: #9a5dbf;
     border-radius: 10px;
     padding: 5px;
     margin-left: -5px;
+}
+
+.ContactUsContainer:hover{
+    background: #643382;
+
 }
 
 .ContactUsLink{

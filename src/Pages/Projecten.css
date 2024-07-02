@@ -23,6 +23,7 @@
 }
 
 .popup.active{
+    box-sizing: border-box;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
@@ -124,13 +125,15 @@
 }
 
 .Image{
+    width: 25%;
     min-width: 100%;
-    min-height: 100%;
     border-radius: 5px;
     cursor: pointer;
     transition: .5s ease;
     backface-visibility: hidden;
 }
+
+
 
 .LargeImage{
     -webkit-user-select: none;

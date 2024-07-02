@@ -36,6 +36,11 @@ function Contact() {
         /*fix sending email*/
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert("Er wordt momenteel gewerkt aan dit contactformulier. Gelieve ons te contacteren via email: voegwerkentommy@gmail.com");
+      };
+
     return (
         <>
             <div class="ContactContainer" ref={ref1}>
@@ -50,7 +55,7 @@ function Contact() {
                     <br/>
                     <a class="ContactMethod"  href="mailto:voegwerkentommy@gmail.com" >voegwerkentommy@gmail.com</a>
                 </div>
-                <form class="InputContainer" action="" method="POST">
+                <form class="InputContainer" id='contactform' action="" method="POST" onSubmit={handleSubmit}>
                     <div class="Split">
                         <label class="custom-field padding">
                             <input type="text" placeholder=" " id="name" required/>

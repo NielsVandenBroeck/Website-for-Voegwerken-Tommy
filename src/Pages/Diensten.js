@@ -22,7 +22,7 @@ function Diensten() {
 
     return (
         <div class="Diensten">
-            <h2 class="Title">DIENSTEN</h2>
+            <div class="DienstTitle">DIENSTEN</div>
             <div class="grid">
                 <div class="WhatWeDoContainer">
                     <div class="navbar">
@@ -43,7 +43,6 @@ function Diensten() {
                 </div>
                 <div class="WhatWeDoImage"/>
             </div>
-            nog extra diensten bij aanvraag? zoals plinten plaatsen en zo?
         </div>
 
     )
