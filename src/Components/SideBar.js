@@ -1,19 +1,30 @@
 import React from 'react'
-import "./SideBar.css"
-import { Link } from 'react-router-dom' 
-import {FaTimes} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import { FaTimes } from 'react-icons/fa'
 
-const Sidebar = ({isOpen, toggle}) => {
+const Sidebar = ({ isOpen, toggle }) => {
     return (
-        isOpen && (<div class="SidebarContainer" onClick={toggle}>
-            <FaTimes class="Icon" onClick={toggle} style={{color:"#fff"}}/>
-            <div class="SidebarMenu">
-                    <Link class="SidebarLink" to="diensten" onClick={toggle}>Diensten</Link>
-                    <Link class="SidebarLink" to="about" onClick={toggle}>Over ons</Link>
-                    <Link class="SidebarLink" to="projecten" onClick={toggle}>Projecten</Link>
-                    <Link class="SidebarLink" to="contact" onClick={toggle}>Contacteer ons</Link>
+        // We removed the "isOpen &&" and instead use Tailwind to slide it in/out smoothly
+        <div
+            className={`fixed left-0 top-0 z-[999] flex h-full w-full items-center justify-center bg-[#2e0747] transition-all duration-300 ease-in-out ${
+                isOpen ? 'visible top-0 opacity-100' : 'invisible -top-full opacity-0'
+            }`}
+            onClick={toggle}
+        >
+            <div
+                className="absolute right-6 top-6 cursor-pointer text-4xl text-white transition-colors hover:text-gray-300"
+                onClick={toggle}
+            >
+                <FaTimes />
             </div>
-        </div>)
+
+            <div className="flex flex-col items-center gap-10">
+                <Link className="text-3xl font-semibold tracking-wide text-white transition-colors hover:text-[#9a5dbf]" to="diensten" onClick={toggle}>Diensten</Link>
+                <Link className="text-3xl font-semibold tracking-wide text-white transition-colors hover:text-[#9a5dbf]" to="about" onClick={toggle}>Over ons</Link>
+                <Link className="text-3xl font-semibold tracking-wide text-white transition-colors hover:text-[#9a5dbf]" to="projecten" onClick={toggle}>Projecten</Link>
+                <Link className="text-3xl font-semibold tracking-wide text-white transition-colors hover:text-[#9a5dbf]" to="contact" onClick={toggle}>Contacteer ons</Link>
+            </div>
+        </div>
     )
 }
 
