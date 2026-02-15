@@ -14,7 +14,7 @@ import ScrollToTop from './ScrollToTop'
 import ToTopButton from './ToTopButton'
 
 
-import {Routes, Route, Redirect} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 
 
 function Main(){
